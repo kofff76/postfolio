@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KOOF AGENCY — premium frontend studio</title>
+  <meta name="description" content="KOOF AGENCY — премиальная frontend-студия для артистов, музыкантов, филармоний, фестивалей и творческих проектов." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="preloader" id="preloader"><span>KOOF AGENCY</span><i></i></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="header" data-header>
+    <button class="brand magnetic" data-route="home" aria-label="На главную"><span class="brand__mark">KM</span><span>KOOF AGENCY</span></button>
+    <nav class="nav" data-nav>
+      <button data-route="home" class="is-active">Главная</button>
+      <button data-route="portfolio">Портфолио</button>
+      <button data-route="templates">Шаблоны</button>
+      <button data-route="contacts">Контакты</button>
+    </nav>
+    <button class="header__cta magnetic" data-route="contacts">Заказать сайт</button>
+    <button class="burger" data-burger aria-label="Меню"><span></span><span></span></button>
+  </header>
+
+  <main id="app">
+    <section class="page page--home is-active" data-page="home">
+      <section class="hero panel" id="home-hero">
+        <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="hero__bggrid" aria-hidden="true"></div>
+        <div class="orbit-copy" data-orbit-text="KOOF AGENCY · PREMIUM FRONTEND · OPERA · CULTURE · 3D · DIGITAL MAISON · "></div>
+        <div class="hero__signature">digital opera maison</div>
+        <div class="hero__left-copy">
+          <p class="eyebrow split-fade">Frontend · Music · Culture · Premium websites</p>
+          <h1 class="hero__title split-title">KOOF<br>AGENCY</h1>
+          <p class="hero__lead reveal-up">Минималистичные сайты для артистов, музыкантов, филармоний, фестивалей и авторских проектов. Без тяжёлой блочности: одна цельная визуальная система, крупная типографика, 3D-сцена и дорогой editorial-ритм.</p>
+          <div class="hero__actions reveal-up">
+            <button class="btn btn--primary magnetic" data-route="portfolio">Смотреть работы</button>
+            <button class="btn btn--ghost magnetic" data-route="templates">Шаблоны</button>
+          </div>
+        </div>
+        <div class="scroll-hint"><span></span>Scroll</div>
+      </section>
+
+      <section class="about-giant panel seamless" id="about">
+        <div class="about-giant__photo reveal-photo glass-3d">
+          <img src="assets/img/sergey-main-blue.png" alt="Сергей — frontend-разработчик и музыкант">
+          <div class="rings" aria-hidden="true"><span></span><span></span><span></span></div>
+        </div>
+        <div class="about-giant__copy">
+          <p class="eyebrow">Creative direction</p>
+          <h2 class="display split-title">Сайт должен звучать.</h2>
+          <div class="silver-copy reveal-lines">
+            <p>Я соединяю frontend, музыкальную драматургию и визуальный дизайн, чтобы сайт выглядел как афиша большого театра, а не как набор стандартных секций.</p>
+            <p>В основе — крупный портрет, чистая сетка, тонкая типографика, 3D-акцент, спокойная анимация и ощущение сцены.</p>
+            <p>Формат подходит для оперных певцов, дирижёров, оркестров, рок-групп, фестивалей, конкурсов и культурных порталов.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-slider panel seamless" id="services">
+        <canvas id="cylinderCanvas" class="section-canvas" aria-hidden="true"></canvas>
+        <div class="white-space" aria-hidden="true"></div>
+        <div class="section-label">services / premium system</div>
+        <div class="slider-head">
+          <p class="eyebrow">Creative websites</p>
+          <h2 class="display split-title">Слайдер премиальных форматов.</h2>
+          <p class="section-copy">Портрет, сцена, медиа и заявка идут единой синей системой: без старой блочности, с крупным кадром и агрессивной премиальной подачей.</p>
+        </div>
+        <div class="service-slider glass-3d" data-service-slider>
+          <article class="service-slide is-active">
+            <img src="assets/img/service-solo-blue.png" alt="Сайты для солистов">
+            <div class="service-slide__copy"><span>01</span><h3>Солисты</h3><p>Персональный сайт: hero-портрет, биография, афиша, репертуар, видео, аудио и booking.</p></div>
+          </article>
+          <article class="service-slide">
+            <img src="assets/img/service-conductor-blue.png" alt="Сайты для дирижёров">
+            <div class="service-slide__copy"><span>02</span><h3>Дирижёры</h3><p>Страница маэстро: крупная типографика, концерты, оркестры, пресса, медиа и контакт.</p></div>
+          </article>
+          <article class="service-slide">
+            <img src="assets/img/service-cello-blue.png" alt="Сайты для инструменталистов">
+            <div class="service-slide__copy"><span>03</span><h3>Инструменталисты</h3><p>Портфолио с неоновой медиа-подачей, галереей, программами и сценическими блоками.</p></div>
+          </article>
+          <article class="service-slide">
+            <img src="assets/img/service-orchestra-blue.png" alt="Сайты для коллективов">
+            <div class="service-slide__copy"><span>04</span><h3>Коллективы</h3><p>Оркестры, ансамбли, филармонии, фестивали, каталоги участников и страницы проектов.</p></div>
+          </article>
+        </div>
+        <div class="slider-controls">
+          <button class="magnetic" data-prev>←</button>
+          <div class="slider-counter"><b data-current>01</b><span>/04</span></div>
+          <button class="magnetic" data-next>→</button>
+        </div>
+      </section>
+
+      <section class="home-contact panel seamless" id="home-contact">
+        <div class="footer-glow"></div>
+        <div class="home-contact__content">
+          <p class="eyebrow">Final scene</p>
+          <h2 class="display split-title">Сайт как премиальная сцена.</h2>
+          <p class="section-copy reveal-up">Артист, группа, филармония, конкурс, фестиваль или личный бренд — собираю визуальный мир, который можно сразу показывать зрителю, организатору и партнёрам.</p>
+          <div class="contact-line reveal-up">
+            <a href="mailto:sergeysuslenkov7@gmail.com">sergeysuslenkov7@gmail.com</a>
+            <a href="https://t.me/sergeysuslenkov7" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
+        </div>
+        <div class="studio-footer">HERO SECTOR</div>
+      </section>
+    </section>
+
+    <section class="page page--portfolio" data-page="portfolio">
+      <section class="portfolio-hero panel seamless-light">
+        <canvas id="cubeCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="portfolio-hero__copy">
+          <p class="eyebrow">Portfolio</p>
+          <h1 class="display split-title">Портфолио без шума.</h1>
+          <p class="section-copy reveal-up">Витрина работ сделана не сеткой ради сетки, а как длинная editorial-лента: крупное изображение, короткий смысл, быстрый переход.</p>
+        </div>
+      </section>
+      <section class="portfolio-grid-section seamless-light">
+        <div class="portfolio-grid">
+          <article class="portfolio-item"><img src="assets/img/service-solo-blue.png" alt="Проект"><div><span>01 / Artist</span><h3>Сайт солиста</h3><p>Hero-сцена, биография, медиа и заявка.</p><a href="https://koofstudio76.github.io/vocal-blue/" target="_blank" rel="noreferrer">Перейти на сайт ↗</a></div></article>
+          <article class="portfolio-item"><img src="assets/img/service-orchestra-blue.png" alt="Проект"><div><span>02 / Opera</span><h3>Opera Blue</h3><p>Холодный синий кинопортрет и крупная типографика.</p><a href="https://koofstudio76.github.io/vocal-templiate-blue/" target="_blank" rel="noreferrer">Перейти на сайт ↗</a></div></article>
+          <article class="portfolio-item"><img src="assets/img/service-cello-blue.png" alt="Проект"><div><span>03 / Gold</span><h3>Opera Gold</h3><p>Светлая бело-золотая система для певицы.</p><a href="https://koofstudio76.github.io/vocal-templiate-gold-/" target="_blank" rel="noreferrer">Перейти на сайт ↗</a></div></article>
+          <article class="portfolio-item"><img src="assets/img/service-conductor-blue.png" alt="Проект"><div><span>04 / Vogue</span><h3>Vogue Style</h3><p>Editorial-масштаб, глянец и портретная подача.</p><a href="https://koofstudio76.github.io/voguestyle/" target="_blank" rel="noreferrer">Перейти на сайт ↗</a></div></article>
+          <article class="portfolio-item"><img src="assets/img/service-duo-blue.png" alt="Проект"><div><span>05 / Rock</span><h3>Fire Girls</h3><p>Тёмная сцена, контраст, группа и медиа.</p><a href="https://koofstudio76.github.io/firegirls-black/" target="_blank" rel="noreferrer">Перейти на сайт ↗</a></div></article>
+          <article class="portfolio-item"><img src="assets/img/project-lounge-silver-1.png" alt="Проект"><div><span>06 / Agency</span><h3>Digital agency</h3><p>3D, кейсы, шаблоны и визуальная презентация.</p><a href="#" data-route="contacts">Обсудить проект ↗</a></div></article>
+        </div>
+        <div class="studio-footer dark">KOOF STUDIO</div>
+      </section>
+    </section>
+
+    <section class="page page--templates" data-page="templates">
+      <section class="templates-hero panel templates-white">
+        <canvas id="templateSphereCanvas" class="template-canvas" aria-hidden="true"></canvas>
+        <div class="templates-hero__copy">
+          <p class="eyebrow">Templates / white sphere</p>
+          <h1 class="display split-title">Белая витрина шаблонов.</h1>
+          <p class="section-copy reveal-up">Крупный hero, жёлто-золотой акцент, белая 3D-сфера и пять прямых переходов на готовые шаблоны.</p>
+        </div>
+      </section>
+      <section class="template-showcase templates-white">
+        <article class="template-card"><a href="https://koofstudio76.github.io/voguestyle/" target="_blank" rel="noreferrer"><figure><img src="assets/img/template-01.png" alt="Шаблон номер один"></figure><div class="template-card__body"><span>01 / Ольга</span><h3>Шаблон номер один</h3><b>Открыть шаблон ↗</b></div></a></article>
+        <article class="template-card"><a href="https://koofstudio76.github.io/vocal-blue/" target="_blank" rel="noreferrer"><figure><img src="assets/img/template-02.png" alt="Шаблон номер два"></figure><div class="template-card__body"><span>02 / Мария</span><h3>Шаблон номер два</h3><b>Открыть шаблон ↗</b></div></a></article>
+        <article class="template-card"><a href="https://koofstudio76.github.io/vocal-templiate-blue/" target="_blank" rel="noreferrer"><figure><img src="assets/img/template-03.png" alt="Шаблон номер три"></figure><div class="template-card__body"><span>03 / Света</span><h3>Шаблон номер три</h3><b>Открыть шаблон ↗</b></div></a></article>
+        <article class="template-card"><a href="https://koofstudio76.github.io/vocal-templiate-gold-/" target="_blank" rel="noreferrer"><figure><img src="assets/img/template-04.png" alt="Шаблон номер четыре"></figure><div class="template-card__body"><span>04 / Николай</span><h3>Шаблон номер четыре</h3><b>Открыть шаблон ↗</b></div></a></article>
+        <article class="template-card"><a href="https://koofstudio76.github.io/firegirls-black/" target="_blank" rel="noreferrer"><figure><img src="assets/img/template-05.png" alt="Шаблон номер пять"></figure><div class="template-card__body"><span>05 / Сюзанна</span><h3>Шаблон номер пять</h3><b>Открыть шаблон ↗</b></div></a></article>
+      </section>
+      <div class="studio-footer dark on-white">KOOF STUDIO</div>
+    </section>
+
+    <section class="page page--contacts" data-page="contacts">
+      <section class="contacts-hero panel seamless-green">
+        <canvas id="greenCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="contacts-hero__copy">
+          <p class="eyebrow">Contact</p>
+          <h1 class="display split-title">Запустить сайт как сцену.</h1>
+          <p class="section-copy reveal-up">Напишите, что нужно собрать: артист, группа, фестиваль, филармония, каталог, афиша или личный бренд.</p>
+          <div class="contact-buttons reveal-up">
+            <a class="btn btn--primary magnetic" href="mailto:sergeysuslenkov7@gmail.com">Email</a>
+            <a class="btn btn--ghost magnetic" href="https://t.me/sergeysuslenkov7" target="_blank" rel="noreferrer">Telegram</a>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:sergeysuslenkov7@gmail.com" method="post" enctype="text/plain">
+          <label>Имя<input name="name" required placeholder="Ваше имя"></label>
+          <label>Проект<input name="project" placeholder="Артист / группа / фестиваль"></label>
+          <label>Контакт<input name="contact" required placeholder="Телефон, Telegram или email"></label>
+          <label>Сообщение<textarea name="message" required placeholder="Коротко опишите задачу"></textarea></label>
+          <button class="btn btn--green magnetic" type="submit">Отправить заявку</button>
+        </form>
+        <div class="studio-footer">KOOF STUDIO</div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
